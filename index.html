@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/aes.js"></script>
+  <script src="js/Extentions.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <section class="top-banner">
+    <div class="container">
+      <center>
+        <!-- <img src="https://d1psgljc389n8q.cloudfront.net/bootcamps/logos/VX6tpIUJa" alt="Bank logo" class="nav__logo" -->
+          <!-- id="logo" /> -->
+          <h1 class="heading">
+            Weather App</h1>
+      </center>
+      <form>
+        <input type="text" placeholder="Search for a city" autofocus>
+        <button class="submit">Submit</button>
+        <button class="localLocation" style="background-color: chocolate;"><i class="fa-solid fa-location-dot"></i></button>
+        <button class="clearAll" style="background-color: rgb(76, 0, 255);">Clear All</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities">
+      </ul>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container">
+      <button class="germanBtn"><img src="./images/germany.webp" alt="" width="50px" height="50px" style="border-radius: 25px"></button>
+      <button class="englishBtn"><img src="./images/uk.svg.png" alt="" width="50px" height="50px" style="border-radius: 15px"></button>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
